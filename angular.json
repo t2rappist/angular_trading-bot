@@ -1,0 +1,39 @@
+{
+    "version": 1,
+    "projects": {
+        "angular_trading-bot": {
+            "projectType": "application",
+            "root": "",
+            "sourceRoot": "src",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist/angular_trading-bot",
+                        "index": "src/index.html",
+                        "main": "src/main.ts",
+                        "polyfills": ["zone.js"],
+                        "tsConfig": "tsconfig.json",
+                        "aot": true,
+                        "assets": [
+                            "src/assets"
+                        ],
+                        "styles": [
+                            "src/styles.css"
+                        ]
+                    }
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "buildTarget": "angular_trading-bot:build"
+                    }
+
+                }
+            }
+        }
+    },
+    "cli": {
+        "analytics": "2c521966-a701-450c-acf1-79e0daddf0a7"
+    }
+}

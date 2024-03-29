@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    font-family: "Montserrat Alternates";
+    width: 100%;
+    top: 0;
+    background-color: #968cdd;
+    color: #292f3d;
+}
+
+.header__title {
+    display: flex;
+    justify-content: left;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.header__name {
+    margin-block: 10%px;
+    cursor: pointer;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.header__button {
+    width: 25%;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "IBM Plex Mono, monospace";
+    color: #292f3d;
+    background: content-box;
+    border-width: 0px;
+}
+
+.header__button:hover {
+    color:#14171f;
+    font-weight: 500;
+    cursor: pointer;
+}

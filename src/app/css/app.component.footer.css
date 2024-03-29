@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    font-family: "IBM Plex Mono, monospace";
+    font-size: 24px;
+    width: 100%;
+    background-color: #968cdd;
+    color: #292f3d;
+}
+
+.footer__body {
+    display: flex;
+    width: 70%;
+}

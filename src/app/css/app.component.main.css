@@ -1,0 +1,100 @@
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #e3d6ef;
+    font-family: "IBM Plex Mono, monospace";
+    background-color: #292f3d;
+}
+
+.main__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.tab {
+    width: 100%;
+} 
+
+.tab-title {
+    display: flex;
+    justify-content: center;
+    padding-block: 1%;
+    width: 100%;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main__about-tab {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.main__title {
+    margin: 0px;
+}
+
+.main__about-block {
+    width: 66%;
+    margin-block: 5%;
+    font-size: 48px;
+}
+
+.main__about-steps {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    background-color: #968cdd;
+    color: #292f3d;
+}
+
+.step-block {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.current-Step {
+    background-color: #515075 ;
+    color: #b7b9ec ;
+    font-weight: 800;
+}
+
+.step-block__number {
+    font-size: 20px;
+}
+
+.step-block__text {
+    font-size: 32px;
+}
+
+.step-line-bracker {
+    border: #2d2b40;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.step-margined-text {
+    margin: 2%;
+}
+
+.main__bot-grid-tab {
+    background-color: #e3d6ef;
+    color: #292f3d;
+}

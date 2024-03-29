@@ -1,0 +1,55 @@
+<div class="header">
+    <div class="header__title">
+        <p class="header__name">B&#246;t&#7791;apper</p>
+        <small class="text-muted header__sub-name">crypto</small>
+    </div>
+    <!-- <div class="header__title">
+        <p class="header__name">B&#246;t&#7791;apper</p>
+    </div> -->
+    <div class="header__menu">
+        <button class="header__button">Add bot</button>
+        <button class="header__button">Export bot-list</button>
+        <button class="header__button">Import bot-list</button>
+        <button class="header__button">Contact me?</button>
+    </div>
+</div>
+<div class="main">
+    <div class="main__body">
+        <div class="main__about-tab tab">
+            <div class="main__about-block">
+                <div class="main__about-title">
+                    <p class="main__title">Start trading with</p> 
+                    <p class="main__title">Most accurate bots from</p> 
+                    <p class="main__title">Bottapper</p>
+                </div>
+                <div class="main__button-menu">
+                    <button class="main__button">Submit</button>
+                    <button class="main__button">Cancel</button>
+                </div>
+            </div>
+            <div class="main__about-steps">
+                @for (step of stepCollection; track $index) {
+                    <div class="step-block" [class.current-Step]="step.isCurrentStep ? true : false" (click)="setCurrentStep(step)">
+                        <div class="step-block__number step-margined-text">{{step.id}}</div>
+                        <div class="step-block__text step-margined-text">{{step.name}}</div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="main__bot-grid-tab tab">
+        <div class="main__grid-tab-title tab-title">BOT LIST</div>
+            <div class="main__grid-tab-body">
+                @for (bot of botCollection; track $index;) {
+                    <div class="bot-grid-row" (click)="changeBot(bot)">
+                        <p class="bot-grid-row__info text"> {{bot.Id}} | {{bot.Name}} is active: {{bot.IsActive}}</p>
+                    </div>
+                }
+            </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer__body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur modi velit necessitatibus ducimus nam at alias facilis officiis! Pariatur, cupiditate quia dignissimos cumque hic distinctio odio maiores doloremque ipsam debitis.
+    </div>
+</div>
